@@ -51,4 +51,8 @@ COPY target/*-runner.jar /deployments/app.jar
 EXPOSE 8080
 USER 1001
 
+<<<<<<< HEAD
 ENTRYPOINT [ "/deployments/run-java.sh" ]
+=======
+ENTRYPOINT [ "/deployments/run-java.sh" ]
+>>>>>>> 41316a8... Initial version of the shopping cart

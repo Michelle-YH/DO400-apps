@@ -54,4 +54,8 @@ COPY --chown=1001 target/quarkus-app/quarkus/ /deployments/quarkus/
 EXPOSE 8080
 USER 1001
 
+<<<<<<< HEAD
 ENTRYPOINT [ "/deployments/run-java.sh" ]
+=======
+ENTRYPOINT [ "/deployments/run-java.sh" ]
+>>>>>>> 41316a8... Initial version of the shopping cart

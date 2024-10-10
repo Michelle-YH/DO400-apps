@@ -1,7 +1,10 @@
 package com.redhat.shopping.catalog;
 
 public class ProductNotFoundInCatalogException extends Exception {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41316a8... Initial version of the shopping cart
     public ProductNotFoundInCatalogException(String errorMessage) {
         super(errorMessage);
     }

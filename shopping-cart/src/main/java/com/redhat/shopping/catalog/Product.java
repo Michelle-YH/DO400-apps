@@ -1,7 +1,10 @@
 package com.redhat.shopping.catalog;
 
 public class Product {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41316a8... Initial version of the shopping cart
     private final int id;
     private final int price;
 

@@ -13,6 +13,10 @@ import java.util.Map;
 public class CartService {
 
     private final Map<Integer, CartItem> products = new HashMap<>();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41316a8... Initial version of the shopping cart
     private int totalItems = 0;
 
     @Inject
@@ -22,18 +26,30 @@ public class CartService {
         this.totalItems = 0;
 
         this.products.forEach((id, cartItem) -> {
+<<<<<<< HEAD
             this.totalItems += cartItem.getQuantity();
         });
     }
 
     public void addProduct(int productId, int quantity) throws ProductNotFoundInCatalogException {
+=======
+            this.totalItems += cartItem.getQty();
+        });
+    }
+
+    public void addProduct(int productId, int qty) throws ProductNotFoundInCatalogException {
+>>>>>>> 41316a8... Initial version of the shopping cart
         Product product = this.catalog.ofId(productId);
 
         if (!this.products.containsKey(productId)) {
             this.products.put(product.id(), new CartItem(product.id(), product.price()));
         }
 
+<<<<<<< HEAD
         this.products.get(product.id()).increaseQuantityBy(quantity);
+=======
+        this.products.get(product.id()).increaseQuantityBy(qty);
+>>>>>>> 41316a8... Initial version of the shopping cart
 
         this.recalculate();
     }

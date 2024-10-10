@@ -1,7 +1,10 @@
 package com.redhat.shopping.cart;
 
 public class ProductNotInCartException extends Exception {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41316a8... Initial version of the shopping cart
     public ProductNotInCartException(String errorMessage) {
         super(errorMessage);
     }

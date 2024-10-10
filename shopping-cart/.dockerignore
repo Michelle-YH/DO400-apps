@@ -2,4 +2,8 @@
 !target/*-runner
 !target/*-runner.jar
 !target/lib/*
+<<<<<<< HEAD
 !target/quarkus-app/*
+=======
+!target/quarkus-app/*
+>>>>>>> 41316a8... Initial version of the shopping cart

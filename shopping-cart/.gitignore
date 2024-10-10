@@ -33,4 +33,8 @@ target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
+<<<<<<< HEAD
 release.properties
+=======
+release.properties
+>>>>>>> 41316a8... Initial version of the shopping cart
