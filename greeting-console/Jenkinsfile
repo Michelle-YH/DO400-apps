@@ -21,6 +21,14 @@ pipeline{
             }
         }
 
-        // Add the Release stage here
+        stage('Release') {
+            steps {
+                sh '''
+                    oc project jygujn-greetings
+                    oc start-build greeting-console  --follow --wait
+                '''
+            }
+        }
+//dddddyyyyyy3333333yd
     }
 }
