@@ -2,7 +2,7 @@ pipeline {
 
 agent { node { label 'maven' } }
 
-environment { APP_NAMESPACE = 'RHT_OCP4_DEV_USER-security-scans' }
+environment { APP_NAMESPACE = 'jygujn-security-scans' }
 
 stages {
 
