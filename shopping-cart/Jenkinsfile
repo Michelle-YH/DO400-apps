@@ -29,9 +29,8 @@ dir('shopping-cart') {
 
 sh """
 
-oc start-build security-scans \
-
---follow --wait -n ${APP_NAMESPACE}
+oc start-build security-scans --follow --wait
+// -n ${APP_NAMESPACE}
 
 """
 
